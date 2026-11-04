@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="สื่อการเรียนรู้วิทยาศาสตร์ เรื่องแรง สำหรับนักเรียนระดับประถมศึกษา">
+<title>เรียนรู้เรื่องแรง | ห้องเรียนวิทยาศาสตร์</title>
+<style>
+:root{--navy:#17324d;--blue:#247ba0;--cyan:#70c1b3;--yellow:#f3c969;--coral:#f28f7b;--paper:#f5f8fc;--ink:#243447;--muted:#62748a;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tahoma,"Noto Sans Thai",sans-serif;background:var(--paper);color:var(--ink);line-height:1.75}
+header{background:linear-gradient(125deg,#17324d,#247ba0);color:white;padding:22px max(5vw,20px) 54px}
+nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-size:1.1rem;font-weight:800;letter-spacing:.3px}nav a{color:white;text-decoration:none;margin-left:18px;font-size:.94rem}nav a:hover{text-decoration:underline}
+.hero{max-width:1100px;margin:45px auto 0;display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center}
+.eyebrow{color:#ffe39a;font-weight:bold;letter-spacing:1px}.hero h1{font-size:clamp(2.2rem,5vw,4.2rem);line-height:1.2;margin:10px 0}.hero p{font-size:1.1rem;max-width:620px;color:#e8f3fa}
+.hero-art{min-height:220px;border:1px solid #ffffff55;border-radius:28px;background:#ffffff15;display:grid;place-items:center;font-size:7rem;position:relative}
+.hero-art span{position:absolute;font-size:1rem;background:#fff;color:var(--navy);padding:6px 13px;border-radius:30px;font-weight:bold}.hero-art .tag1{top:18px;left:18px}.hero-art .tag2{right:18px;bottom:18px}
+.btn{display:inline-block;border:0;border-radius:12px;padding:11px 18px;background:var(--yellow);color:#26384a;font-weight:bold;text-decoration:none;cursor:pointer;font-size:1rem}.btn:hover{filter:brightness(.96);transform:translateY(-1px)}
+main{max-width:1100px;margin:-22px auto 60px;padding:0 20px}.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.quick article,.panel,.topic{background:white;border-radius:18px;padding:22px;box-shadow:0 8px 24px #1a3b570d}
+.quick article{border-top:4px solid var(--cyan)}.quick strong{display:block;font-size:1.15rem;color:var(--navy)}.quick span{color:var(--muted);font-size:.94rem}
+section{margin-top:42px;scroll-margin-top:20px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-bottom:18px}h2{color:var(--navy);font-size:1.8rem;margin:0}h3{color:var(--navy);margin:0 0 8px}.sub{color:var(--muted);margin:4px 0 0}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.topic{border-left:5px solid var(--blue)}.topic .emoji{font-size:2rem}.topic p{margin:5px 0 0}.formula{background:#eaf5fa;border-radius:14px;padding:14px 18px;margin-top:12px;font-size:1.15rem;font-weight:bold;color:#174d6b;text-align:center}
+.example{background:#fff8e8;border-left:5px solid var(--yellow);padding:16px 18px;border-radius:12px;margin-top:16px}
+.simulator{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center}.controls label{display:block;font-weight:bold;margin:15px 0 5px}.controls input{width:100%;accent-color:var(--blue)}.value{color:var(--blue);font-weight:bold;float:right}
+.result{background:#eaf5fa;border-radius:18px;padding:22px;text-align:center}.result .big{font-size:2.8rem;font-weight:800;color:var(--blue);line-height:1.3}.result p{margin:5px 0}
+.road{height:115px;position:relative;background:linear-gradient(#fff 0 70%,#d9e2ea 70%);border-radius:14px;margin-top:14px;overflow:hidden}.road:after{content:"";position:absolute;bottom:22px;left:0;right:0;border-top:3px dashed #fff}.cart{position:absolute;bottom:27px;left:10%;font-size:2.5rem;transition:left .25s}
+.quiz{display:grid;gap:14px}.question{padding:18px;border:1px solid #e3eaf0;border-radius:14px}.question p{font-weight:bold;margin:0 0 10px}.options{display:grid;gap:8px}.options label{padding:8px 12px;border-radius:9px;background:#f4f7fa;cursor:pointer}.options label:hover{background:#eaf5fa}.feedback{font-weight:bold;min-height:28px;margin-top:7px}.correct{color:#16834a}.wrong{color:#c24b42}
+footer{text-align:center;background:var(--navy);color:#dceaf3;padding:25px 18px}footer small{opacity:.85}
+@media(max-width:720px){.hero{grid-template-columns:1fr;margin-top:30px}.hero-art{min-height:160px;font-size:5rem}.quick{grid-template-columns:1fr}.grid2,.simulator{grid-template-columns:1fr}nav a{margin:0 10px 0 0}.section-head{align-items:start}}
+</style>
+</head>
+<body>
+<header>
+<nav><div class="brand">🔬 ห้องเรียนวิทยาศาสตร์</div><div><a href="#learn">บทเรียน</a><a href="#sim">ทดลอง</a><a href="#quiz">แบบทดสอบ</a></div></nav>
+<div class="hero">
+ <div><div class="eyebrow">SCIENCE • เรียนรู้ผ่านการลงมือทำ</div><h1>เรื่อง “แรง”</h1>
+ <p>แรงอยู่รอบตัวเรา ตั้งแต่การผลักประตู เตะลูกบอล ไปจนถึงการดึงรถเข็น มาค้นหากันว่าแรงทำให้สิ่งต่าง ๆ เปลี่ยนแปลงได้อย่างไร</p>
+ <a class="btn" href="#learn">เริ่มเรียนรู้กันเลย ↓</a></div>
+ <div class="hero-art" aria-label="ภาพลูกบอล"><span class="tag1">ผลัก</span>⚽<span class="tag2">ดึง • เคลื่อนที่</span></div>
+</div>
+</header>
+<main>
+<div class="quick">
+ <article><strong>🧲 แรงคืออะไร?</strong><span>การผลักหรือการดึงที่กระทำต่อวัตถุ</span></article>
+ <article><strong>➡️ แรงมีทิศทาง</strong><span>แรงมีทั้งขนาดและทิศทาง</span></article>
+ <article><strong>📏 หน่วยของแรง</strong><span>นิวตัน (Newton) ใช้สัญลักษณ์ N</span></article>
+</div>
+<section id="learn">
+ <div class="section-head"><div><h2>1. ทำความรู้จักกับแรง</h2><p class="sub">แรงเป็นสิ่งที่ทำให้วัตถุเปลี่ยนแปลงการเคลื่อนที่หรือรูปร่าง</p></div></div>
+ <div class="grid2">
+  <div class="topic"><div class="emoji">🫷</div><h3>แรงผลัก</h3><p>การออกแรงดันวัตถุให้ออกจากตัวเรา เช่น ผลักประตูให้เปิด หรือผลักกล่อง</p></div>
+  <div class="topic"><div class="emoji">🪢</div><h3>แรงดึง</h3><p>การออกแรงดึงวัตถุเข้าหาตัวเรา เช่น ดึงเชือก หรือดึงรถเข็น</p></div>
+ </div>
+ <div class="example"><b>ลองสังเกต:</b> เมื่อเราเตะลูกฟุตบอล ลูกบอลจะเคลื่อนที่เพราะเท้าออกแรงกระทำต่อลูกบอล</div>
+</section>
+<section>
+ <div class="section-head"><div><h2>2. ผลของแรงต่อวัตถุ</h2><p class="sub">แรงสามารถทำให้วัตถุเปลี่ยนแปลงได้หลายลักษณะ</p></div></div>
+ <div class="grid2">
+  <div class="topic"><div class="emoji">🏃</div><h3>ทำให้เริ่มเคลื่อนที่</h3><p>ผลักรถของเล่นที่หยุดนิ่งให้เคลื่อนที่</p></div>
+  <div class="topic"><div class="emoji">🛑</div><h3>ทำให้หยุดหรือช้าลง</h3><p>ใช้มือรับลูกบอลที่กำลังเคลื่อนที่</p></div>
+  <div class="topic"><div class="emoji">↪️</div><h3>เปลี่ยนทิศทาง</h3><p>ใช้ไม้ตีลูกบอลให้เปลี่ยนทิศทาง</p></div>
+  <div class="topic"><div class="emoji">🧽</div><h3>เปลี่ยนรูปร่าง</h3><p>บีบฟองน้ำหรือดินน้ำมันให้เปลี่ยนรูป</p></div>
+ </div>
+</section>
+<section>
+ <div class="section-head"><div><h2>3. แรงลัพธ์และการคำนวณ</h2><p class="sub">เมื่อมีแรงหลายแรงกระทำต่อวัตถุพร้อมกัน เราพิจารณาผลรวมของแรง</p></div></div>
+ <div class="panel">
+  <h3>แรงทิศทางเดียวกัน</h3><p>นำขนาดของแรงมาบวกกัน เช่น ผลักกล่องไปทางขวา 5 นิวตัน และ 3 นิวตัน</p>
+  <div class="formula">แรงลัพธ์ = 5 + 3 = 8 นิวตัน →</div>
+  <h3 style="margin-top:18px">แรงทิศทางตรงข้ามกัน</h3><p>นำขนาดของแรงมาลบกัน และทิศทางของแรงลัพธ์เป็นทิศของแรงที่มีขนาดมากกว่า</p>
+  <div class="formula">แรงลัพธ์ = 8 − 3 = 5 นิวตัน →</div>
+  <div class="example"><b>จำไว้:</b> ถ้าแรงสองแรงมีขนาดเท่ากันแต่ทิศตรงข้าม แรงลัพธ์เป็นศูนย์ วัตถุอยู่ในสภาวะสมดุลของแรง</div>
+ </div>
+</section>
+<section id="sim">
+ <div class="section-head"><div><h2>4. ห้องทดลองแรงและความเร่ง</h2><p class="sub">ปรับแรงและมวล แล้วสังเกตผลที่เกิดขึ้น</p></div></div>
+ <div class="panel simulator">
+  <div class="controls">
+   <label for="force">แรงที่กระทำ <span class="value" id="forceVal">10 N</span></label><input id="force" type="range" min="0" max="50" value="10" step="1">
+   <label for="mass">มวลของวัตถุ <span class="value" id="massVal">5 kg</span></label><input id="mass" type="range" min="1" max="20" value="5" step="1">
+   <p class="sub">ทดลอง: เพิ่มแรงหรือลดมวล แล้วดูค่าความเร่ง</p>
+  </div>
+  <div class="result"><div>ความเร่งของวัตถุ</div><div class="big" id="accel">2.00</div><b>เมตรต่อวินาทีกำลังสอง (m/s²)</b><div class="formula">a = F ÷ m</div><div class="road"><div class="cart" id="cart">🚗</div></div><p id="interpret">แรงมากขึ้น ความเร่งมากขึ้น</p></div>
+ </div>
+ <p class="sub">แบบจำลองอย่างง่ายตามกฎข้อที่ 2 ของนิวตัน โดยสมมติว่าไม่มีแรงอื่นมากระทำ</p>
+</section>
+<section id="quiz">
+ <div class="section-head"><div><h2>5. แบบทดสอบท้ายบท</h2><p class="sub">เลือกคำตอบที่ถูกต้อง แล้วกดตรวจคำตอบ</p></div></div>
+ <div class="panel quiz" id="quizBox">
+  <div class="question"><p>ข้อ 1. ข้อใดเป็นตัวอย่างของแรงผลัก?</p><div class="options">
+   <label><input type="radio" name="q1" value="a"> ก. ดึงเชือก</label><label><input type="radio" name="q1" value="b"> ข. ผลักประตูให้เปิด</label><label><input type="radio" name="q1" value="c"> ค. ลากกระเป๋า</label></div><div class="feedback" id="f1"></div></div>
+  <div class="question"><p>ข้อ 2. หน่วยของแรงคือข้อใด?</p><div class="options">
+   <label><input type="radio" name="q2" value="a"> ก. เมตร</label><label><input type="radio" name="q2" value="b"> ข. กิโลกรัม</label><label><input type="radio" name="q2" value="c"> ค. นิวตัน</label></div><div class="feedback" id="f2"></div></div>
+  <div class="question"><p>ข้อ 3. ออกแรง 10 N กระทำต่อมวล 2 kg จะมีความเร่งเท่าใด?</p><div class="options">
+   <label><input type="radio" name="q3" value="a"> ก. 5 m/s²</label><label><input type="radio" name="q3" value="b"> ข. 12 m/s²</label><label><input type="radio" name="q3" value="c"> ค. 20 m/s²</label></div><div class="feedback" id="f3"></div></div>
+  <button class="btn" id="checkQuiz">ตรวจคำตอบ</button><div id="score" aria-live="polite" style="font-weight:bold;font-size:1.1rem"></div>
+ </div>
+</section>
+<section>
+ <div class="panel" style="text-align:center">
+  <h2>สรุปความรู้</h2><p>แรงคือการผลักหรือการดึง มีหน่วยเป็นนิวตัน แรงสามารถทำให้วัตถุเริ่มเคลื่อนที่ หยุด เปลี่ยนความเร็ว เปลี่ยนทิศทาง หรือเปลี่ยนรูปร่างได้</p>
+  <div class="formula">กฎข้อที่ 2 ของนิวตัน: F = m × a</div>
+  <p class="sub">F = แรง (นิวตัน) • m = มวล (กิโลกรัม) • a = ความเร่ง (m/s²)</p>
+ </div>
+</section>
+</main>
+<footer><b>🔬 ห้องเรียนวิทยาศาสตร์ | สื่อการเรียนรู้ เรื่องแรง</b><br><small>เรียนรู้ • ทดลอง • คิดวิเคราะห์ • นำไปใช้ในชีวิตประจำวัน</small></footer>
+<script>
+const force=document.getElementById('force'), mass=document.getElementById('mass');
+function updateSim(){const f=+force.value,m=+mass.value,a=f/m;document.getElementById('forceVal').textContent=f+' N';document.getElementById('massVal').textContent=m+' kg';document.getElementById('accel').textContent=a.toFixed(2);document.getElementById('cart').style.left=(8+Math.min(a/10,1)*72)+'%';document.getElementById('interpret').textContent=f===0?'ไม่มีแรงลัพธ์จากแรงที่กำหนด':a>=5?'ความเร่งค่อนข้างมาก!':a>=2?'วัตถุมีความเร่งเพิ่มขึ้น':'ความเร่งมีค่าน้อย';}
+force.addEventListener('input',updateSim);mass.addEventListener('input',updateSim);updateSim();
+document.getElementById('checkQuiz').addEventListener('click',()=>{const answers={q1:'b',q2:'c',q3:'a'};let score=0;Object.entries(answers).forEach(([q,a],i)=>{const selected=document.querySelector('input[name="'+q+'"]:checked');const box=document.getElementById('f'+(i+1));if(!selected){box.textContent='กรุณาเลือกคำตอบ';box.className='feedback wrong';}else if(selected.value===a){score++;box.textContent='✓ ถูกต้อง เก่งมาก!';box.className='feedback correct';}else{box.textContent='✗ ยังไม่ถูก ลองทบทวนบทเรียนอีกครั้ง';box.className='feedback wrong';}});document.getElementById('score').textContent='คะแนนของคุณ '+score+' / 3 คะแนน';});
+</script>
+</body>
+</html>
